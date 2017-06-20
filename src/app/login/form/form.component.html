@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="formClass">
+  <ul>
+    <li>■</li>
+    <li>■</li>
+    <li>■</li>
+    <li>■</li>
+  </ul>
+    <label [@changeText]="state">{{showText()}}</label>
+    <input type="text" [(ngModel)]="inputText" value={{inputText}} (keypress)="sendLetter($event)" required id="inp">
+    <a href="#_"><i class="fa fa-angle-right hvr-bounce-in" aria-hidden="true" (click)="incrementStage(); animateMe()" ></i></a>
+  </div>
+<app-letters [selectedLetter]="selLetter"></app-letters>
+</div>
+<div class="container">
+  <div class="underText">
+    <p>This is yo’ first playlist on WUTUP!<br>
+      When you’re finished signning up check it out and edit it. <span>Got it!</span></p>
+  </div>
+</div>
+

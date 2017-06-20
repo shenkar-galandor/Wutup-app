@@ -1,0 +1,38 @@
+
+header{
+  margin-top:80px;
+}
+
+h1{
+  display:inline-block;
+  color:#ffce00;
+  font-weight: bold;
+  font-family: "Poplar std";
+}
+
+h1 span{
+  color:#8348ad;
+  padding-right: 35px;
+}
+
+h1 span:nth-child(2){
+  color:#8348ad;
+}
+
+header p{
+  display:inline-block;
+  font-family: "Helvetica - medium Condensed bold";
+  font-weight: bold;
+  color:#999188;
+}
+
+.musicElements{
+  margin-top:20px;
+  float:right;
+}
+
+.musicElements i{
+  margin-right:45px;
+  color:#999188;
+  font-size: 26px;
+}

@@ -1,0 +1,60 @@
+.formClass{
+  position: relative;
+  top:70px;
+  width: 600px;
+  font-family: "Poplar std";
+}
+
+ul{
+  padding:0;
+}
+
+li{
+  color:#8348ad;
+  font-size: 26px;
+  padding-right:10px;
+  display:inline;
+  list-style-type: none;
+}
+
+label{
+  display: block;
+  font-size: 56px;
+  color:#8348ad;
+  font-weight: bold;
+}
+
+input{
+  background: transparent;
+  width: 100%;
+  height: 70px;
+  font-weight: bold;
+  font-size: 62px;
+  border: 0;
+  outline: none;
+  border-bottom: 1px dotted #948c83;
+}
+input,
+textarea {
+  color: #ffce00;
+  -webkit-text-fill-color: #8348ad;
+}
+i{
+  margin-top:10px;
+  color:#999188;
+  float:right;
+  font-size:62px;
+}
+
+.underText{
+  margin-top:85px;
+  color:#999188;
+}
+
+.underText span{
+  color:#ffce00;
+}
+
+p{
+  font-family: "Helvetica - medium Condensed bold";
+}

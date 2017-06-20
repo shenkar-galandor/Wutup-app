@@ -1,0 +1,41 @@
+<div class="container">
+  <button (click)="openNav()">Open Playlist</button>
+  <button (click)="closeNav()">Close Playlist</button>
+  <div class="row" #songList>
+    <div class="col-md-4 playZone" *ngFor="let song of playlist; let i = index">
+      <div class="pull-left"><img class="thumb" [src]="song.thumbnails.medium.url"></div>
+      <p>{{song.title}}</p>
+      <p><span>By</span> {{song.channelTitle}}</p>
+      <p><span>Created in 2006</span></p>
+      <i class="plusIcon pull-right"
+         aria-hidden="true"
+         (click)="addSong(song.id,
+                          song.title,
+                          song.channelTitle,
+                          '2017',
+                          song.thumbnails.medium.url,
+                          i)"></i>
+      <div class="btn-group" role="group">
+        <div>
+          <youtube-player class="toBeHidden"
+            [videoId]="song.id"
+            (ready)="songs[i].savePlayer($event)"
+            (change)="songs[i].onStateChange($event)"
+          >
+          </youtube-player>
+        </div>
+        <button type="button" class="btn btn-default" (click)="songs[i].playVideo()">Play</button>
+        <button type="button" class="btn btn-default" (click)="songs[i].pauseVideo()">Pause</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="sidenav" #personalSideBar>
+  <app-personal-playlist [elementText]="elementToPass"
+                         [songId]="songIdToSend"
+                         [songImage]="songImagetoSend"
+                         [songAuthor]="songAuthorToSend"
+                         [songTitle]="songTitleToSend"></app-personal-playlist>
+</div>

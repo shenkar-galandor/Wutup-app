@@ -1,0 +1,31 @@
+.toBeHidden{
+  display:none;
+}
+
+.playlistInstance{
+  margin-bottom: 20px;
+}
+
+img{
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+h1{
+  color:#8348ad;
+  font-family: "Poplar std";
+  margin:0;
+  padding:0;
+}
+
+p{
+  margin:0;
+  font-family: "Helvetica - medium Condensed";
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+p span{
+  color:#ffce00;
+}

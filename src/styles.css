@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+header,nav,aside,footer,article,section,main{
+  display:block;
+}
+
+body{
+  background:#1a1a1a;
+}
+
+@font-face {
+  font-family: 'Poplar std';
+  src: url('fonts/POPLARSTD_0.woff');
+}
+
+@font-face {
+  font-family: 'Helvetica - medium Condensed bold';
+  src: url('fonts/HELVETICA-CONDENSED-BOLD.woff');
+}
+
+@font-face {
+  font-family: 'Helvetica - medium Condensed';
+  src: url('fonts/HELVETICA-CONDENSED-LIGHT.woff');
+}

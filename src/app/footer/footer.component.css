@@ -1,0 +1,30 @@
+footer{
+  background: #000000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.clue{
+  position: absolute;
+  left:25px;
+  bottom:20px;
+  display: block;
+  height: 74px;
+  width: 46px;
+  background: url("../../../images/clue.png");
+}
+p{
+  color:#8348ad
+}
+
+p span{
+  color:#999188;
+}
+
+i{
+  position: relative;
+  top:8px;
+}
+

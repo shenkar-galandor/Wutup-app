@@ -1,0 +1,39 @@
+nav{
+  margin-top: 40px;
+}
+.logo{
+  display: inline-block;
+  font-size: 38px;
+  font-weight: bold;
+  color:#ffce00;
+  text-decoration: none;
+  font-family: "Poplar std";
+}
+
+.logo span{
+  color:#8348ad;
+}
+
+.hvr-pop{
+  font-family: "Helvetica - medium Condensed";
+}
+
+ul{
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul li{
+  margin-right:10px;
+  display: inline-block;
+}
+
+ul li a, ul li a:visited{
+  color:#8348ad;
+  transition: all 0.4s linear;
+}
+
+ul li a:hover{
+  text-decoration: none;
+  color:#ffce00;
+}

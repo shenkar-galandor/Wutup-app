@@ -1,0 +1,102 @@
+.col-md-4{
+  margin-top: 40px;
+}
+p{
+  margin:0;
+  padding: 0;
+  position:relative;
+  left: 10px;
+  color:#8348ad;
+}
+
+span{
+  color: #999188;
+}
+
+i{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color:#ffce00;
+  padding: 3px 9px;
+  border-radius: 100%;
+}
+
+.plusIcon{
+  background: url("../../../../images/plus.png");
+  width: 42px;
+  height: 41px;
+  cursor: pointer;
+}
+
+.toBeHidden{
+  display: none;
+}
+
+.playZone{
+  height: 160px;
+  width: 390px;
+}
+
+.thumb {
+  width: 120px;
+  height: 120px;
+  background: #cccccc
+}
+
+p{
+  font-family:"Helvetica - medium Condensed"
+}
+
+.playlistNav{
+
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>My Playlist</h1>
+  <div class="row">
+    <div class="col-md-4 playZone"
+        *ngFor="let song of playlist"
+         #selectedSong>
+      <div class="playlistInstance" *ngFor="let personal of song.playlist; let i = index">
+      <div class="pull-left"><img class="thumb" [src]="personal.image"></div>
+      <p>{{personal.songTitle}}</p>
+      <p><span>By</span> {{personal.songAuthor}}</p>
+      <p><span>Created in {{personal.yearOfCreation}}</span></p>
+      <i class="plusIcon pull-right" aria-hidden="true"></i>
+      <div class="btn-group" role="group">
+        <div>
+          <youtube-player class="toBeHidden"
+                          [videoId]="personal.songId"
+                          (ready)="songs[i].savePlayer($event)"
+                          (change)="songs[i].onStateChange($event)"
+          >
+          </youtube-player>
+        </div>
+        <button type="button" class="btn btn-default" (click)="songs[i].playVideo()">Play</button>
+        <button type="button" class="btn btn-default" (click)="songs[i].pauseVideo()">Pause</button>
+        <button type="button" class="btn btn-default" (click)="removeSong(i,personal.songId)">Remove</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
