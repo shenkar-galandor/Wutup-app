@@ -12,7 +12,7 @@ import 'rxjs/add/operator/toPromise';
 export class PlaylistService {
   personPlaylist: PersonalSong[];
 
-  private urlPath:string = 'http://localhost:3000/';
+  private urlPath:string = 'https://wutupws.herokuapp.com/';
   constructor(private http: Http) {}
 
   search(): Promise<Song[]> {

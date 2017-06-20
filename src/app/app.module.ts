@@ -16,6 +16,7 @@ import { SearchComponent } from './main/search/search.component';
 import { PlaylistComponent } from './main/playlist/playlist.component';
 import { YoutubePlayerModule } from 'ng2-youtube-player';
 import { PersonalPlaylistComponent } from './main/playlist/personal-playlist/personal-playlist.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,11 @@ import { PersonalPlaylistComponent } from './main/playlist/personal-playlist/per
     HttpModule,
     BrowserAnimationsModule,
     YoutubePlayerModule,
-    AppRoutingModule
+    RouterModule.forRoot([
+      {path: '', redirectTo: '/main', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent},
+      {path: 'main', component: MainComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@
   </ul>
     <label [@changeText]="state">{{showText()}}</label>
     <input type="text" [(ngModel)]="inputText" value={{inputText}} (keypress)="sendLetter($event)" required id="inp">
-    <a href="#_"><i class="fa fa-angle-right hvr-bounce-in" aria-hidden="true" (click)="incrementStage(); animateMe()" ></i></a>
+    <a><i class="fa fa-angle-right hvr-bounce-in" aria-hidden="true" (click)="incrementStage(); animateMe()" ></i></a>
   </div>
 <app-letters [selectedLetter]="selLetter"></app-letters>
 </div>
