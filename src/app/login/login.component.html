@@ -1,2 +1,4 @@
 <app-header></app-header>
-<app-form></app-form>
+<app-form (letSelect)="onLetterSelect($event)"></app-form>
+<app-letters [selectedLetter]="letterToSend"></app-letters>
+<app-footer></app-footer>

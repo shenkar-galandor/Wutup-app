@@ -19,7 +19,9 @@ export class PlaylistComponent implements OnInit {
   songTitleToSend:string;
   songAuthorToSend:string;
   songImagetoSend: string;
-
+  toggleButton = true;
+  togglePlaylist = true;
+  togglePlayzone = false;
   constructor(private playlistService: PlaylistService, private player: Player) { }
 
   ngOnInit() {
@@ -34,10 +36,12 @@ export class PlaylistComponent implements OnInit {
 
   openNav(val) {
       this.personalSideBar.nativeElement.style.width = '250px';
+      this.togglePlaylist = !this.togglePlaylist;
 }
 
   closeNav() {
     this.personalSideBar.nativeElement.style.width = '0px';
+    this.togglePlaylist = !this.togglePlaylist;
   }
 
   addSong(songId:string, title:string, author:string, year:string, image:string, i:number) {
@@ -54,4 +58,33 @@ export class PlaylistComponent implements OnInit {
   this.songTitleToSend = title;
   this.elementToPass = 'hi';
   }
+
+  changeButton(){
+    this.toggleButton = !this.toggleButton;
+  }
+
+  onPlay() {
+    if (this.toggleButton === true){
+      return 'inline';
+    }else {
+      return 'none';
+    }
+  }
+
+  onPause() {
+    if (this.toggleButton === false){
+      return 'inline';
+    }else {
+      return 'none';
+    }
+  }
+
+  closePlaylist(){
+    if (this.togglePlaylist === false) {
+      return 'block';
+    }else{
+      return 'none';
+    }
+  }
+
 }

@@ -15,6 +15,50 @@
   font-size: 120px;
   color:#8348ad;
   font-weight:bold;
+  position: relative;
+  left: 20px;
 }
+
+.yellowLet p {
+  display:inline;
+  position: relative;
+}
+.yellowLet p:after {
+  position: absolute;
+  top: -15px;
+  left: -8px;
+  right: 70px;
+  bottom: -30px;
+  color: yellow;
+  text-shadow: 0px 0px 0px 0px #555;
+  transform: rotate(-20deg);
+}
+
+.yellowLet#letterC p:after{  content: "A";  }
+.yellowLet#letterD p:after{  content: "B";  }
+.yellowLet#letterE p:after{  content: "C";  }
+.yellowLet#letterF p:after{  content: "D";  }
+.yellowLet#letterG p:after{  content: "E";  }
+.yellowLet#letterH p:after{  content: "F";  }
+.yellowLet#letterI p:after{  content: "G";  }
+.yellowLet#letterJ p:after{  content: "H";  }
+.yellowLet#letterK p:after{  content: "I";  }
+.yellowLet#letterL p:after{  content: "J";  }
+.yellowLet#letterM p:after{  content: "K";  }
+.yellowLet#letterN p:after{  content: "L";  }
+.yellowLet#letterO p:after{  content: "M";  }
+.yellowLet#letterP p:after{  content: "N";  }
+.yellowLet#letterQ p:after{  content: "O";  }
+.yellowLet#letterR p:after{  content: "P";  }
+.yellowLet#letterS p:after{  content: "Q";  }
+.yellowLet#letterT p:after{  content: "R";  }
+.yellowLet#letterU p:after{  content: "S";  }
+.yellowLet#letterV p:after{  content: "T";  }
+.yellowLet#letterW p:after{  content: "U";  }
+.yellowLet#letterX p:after{  content: "V";  }
+.yellowLet#letterY p:after{  content: "W";  }
+.yellowLet#letterZ p:after{  content: "X";  }
+.yellowLet#letterYY p:after{  content: "Y";  }
+.yellowLet#letterZZ p:after{  content: "Z";  }
 
 

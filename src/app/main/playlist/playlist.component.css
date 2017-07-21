@@ -2,6 +2,7 @@
   margin-top: 40px;
 }
 p{
+  width: 90%;
   margin:0;
   padding: 0;
   position:relative;
@@ -23,6 +24,8 @@ i{
 }
 
 .plusIcon{
+  position: absolute;
+  top:10px;
   background: url("../../../../images/plus.png");
   width: 42px;
   height: 41px;
@@ -34,8 +37,14 @@ i{
 }
 
 .playZone{
+  padding-top:20px;
+  position: relative;
   height: 160px;
   width: 390px;
+}
+
+.playZone:hover{
+  background: rgba(0,0,0,0.7);
 }
 
 .thumb {
@@ -48,9 +57,6 @@ p{
   font-family:"Helvetica - medium Condensed"
 }
 
-.playlistNav{
-
-}
 
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -93,6 +99,49 @@ p{
 #main {
   transition: margin-left .5s;
   padding: 20px;
+}
+
+
+.playButton{
+  padding:10px;
+  border-radius: 100%;
+  border: 2px dotted #ffce00;
+  position: absolute;
+  right: 297px;
+  top: 60px;
+}
+
+.pauseButton{
+  display: none;
+  padding:10px;
+  border-radius: 100%;
+  border: 2px dotted #ffce00;
+  position: absolute;
+  right: 297px;
+  top: 60px;
+}
+
+.progress{
+  top:120px;
+  right:93px;
+  position: absolute;
+  background: url("../../../assets/on.png") no-repeat;
+  width: 151px;
+  height: 29px;
+}
+
+.openPlayList{
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.closePlayList{
+  position: absolute;
+  cursor: pointer;
+  top:60px;
+  right:255px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

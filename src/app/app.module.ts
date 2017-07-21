@@ -16,8 +16,9 @@ import { SearchComponent } from './main/search/search.component';
 import { PlaylistComponent } from './main/playlist/playlist.component';
 import { YoutubePlayerModule } from 'ng2-youtube-player';
 import { PersonalPlaylistComponent } from './main/playlist/personal-playlist/personal-playlist.component';
-import {RouterModule} from '@angular/router';
-
+import {PlaylistService} from './services/playlistService';
+import {Player} from './services/player';
+import { MainFooterComponent } from './main/main-footer/main-footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import {RouterModule} from '@angular/router';
     NavComponent,
     SearchComponent,
     PlaylistComponent,
-    PersonalPlaylistComponent
+    PersonalPlaylistComponent,
+    MainFooterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,13 +40,9 @@ import {RouterModule} from '@angular/router';
     HttpModule,
     BrowserAnimationsModule,
     YoutubePlayerModule,
-    RouterModule.forRoot([
-      {path: '', redirectTo: '/main', pathMatch: 'full'},
-      {path: 'login', component: LoginComponent},
-      {path: 'main', component: MainComponent}
-    ])
-  ],
-  providers: [],
+    AppRoutingModule
+    ],
+  providers: [PlaylistService, Player],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

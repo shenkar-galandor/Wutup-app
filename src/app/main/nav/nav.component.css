@@ -37,3 +37,8 @@ ul li a:hover{
   text-decoration: none;
   color:#ffce00;
 }
+
+.avatar{
+  position:relative;
+  right: 10px;
+}

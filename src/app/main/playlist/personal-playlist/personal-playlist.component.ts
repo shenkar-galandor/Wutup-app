@@ -58,7 +58,6 @@ export class PersonalPlaylistComponent implements OnInit {
       this.playlist[0].playlist[i].yearOfCreation = '2007';
     }
   }
-
 }
 
 

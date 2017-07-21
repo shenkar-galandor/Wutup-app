@@ -1,0 +1,175 @@
+footer{
+  background: #000000;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+}
+
+p{
+  display: inline-block;
+  position: relative;
+  color:#998f88;
+  font-family:"Helvetica - medium Condensed";
+  top:10px;
+  left:45px;
+}
+
+p span{
+  color:#8348ad;
+}
+
+.clue{
+  position: absolute;
+  left:25px;
+  bottom:20px;
+  display: block;
+  height: 74px;
+  width: 46px;
+}
+
+i{
+  position: relative;
+  top:8px;
+}
+
+.openFooter{
+  color:#ffce00;
+  top: 20px;
+}
+
+.backButton{
+  padding:10px;
+  border-radius: 100%;
+  border: 2px dotted #ffce00;
+  color:#ffce00;
+  top:15px;
+  left: 10px;
+}
+
+.playButton{
+  padding:10px;
+  border-radius: 100%;
+  border: 2px dotted #ffce00;
+  color:#ffce00;
+  top:15px;
+  left: 15px;
+}
+
+.nextButton{
+  padding:10px;
+  border-radius: 100%;
+  border: 2px dotted #ffce00;
+  color:#ffce00;
+  top:15px;
+  left: 20px;
+}
+
+.progressFooter{
+  position: relative;
+  top: 25px;
+  left: 35px;
+}
+
+.speaker{
+  color:#998f88;
+  top:32px;
+  left: 390px;
+}
+
+
+.volumeRange{
+  display: inline-block;
+  position: relative;
+  top: 25px;
+  left:400px;
+  width: 15px;
+
+}
+
+input[type=range].volumeRange {
+  -webkit-appearance: none;
+  width: 200px;
+  margin: 5.2px 0;
+}
+input[type=range].volumeRange:focus {
+  outline: none;
+}
+input[type=range].volumeRange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+  background: #8348ad;
+  border-radius: 1.6px;
+  border: 0.5px solid #010101;
+}
+input[type=range].volumeRange::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 0.5px solid #000000;
+  height: 14px;
+  width: 9px;
+  border-radius: 3px;
+  background: #ffce00;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.7px;
+}
+input[type=range].volumeRange:focus::-webkit-slider-runnable-track {
+  background: #8348ad;
+}
+input[type=range].volumeRange::-moz-range-track {
+  width: 100%;
+  height: 3.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+  background: #8348ad;
+  border-radius: 1.6px;
+  border: 0.5px solid #010101;
+}
+input[type=range].volumeRange::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 0.5px solid #000000;
+  height: 14px;
+  width: 9px;
+  border-radius: 3px;
+  background: #ffce00;
+  cursor: pointer;
+}
+input[type=range].volumeRange::-ms-track {
+  width: 100%;
+  height: 3.6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range].volumeRange::-ms-fill-lower {
+  background: #8348ad;
+  border: 0.5px solid #010101;
+  border-radius: 3.2px;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].volumeRange::-ms-fill-upper {
+  background: #8348ad;
+  border: 0.5px solid #010101;
+  border-radius: 3.2px;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].volumeRange::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 0.5px solid #000000;
+  height: 14px;
+  width: 9px;
+  border-radius: 3px;
+  background: #ffce00;
+  cursor: pointer;
+  height: 3.6px;
+}
+input[type=range].volumeRange:focus::-ms-fill-lower {
+  background: #8348ad;
+}
+input[type=range].volumeRange:focus::-ms-fill-upper {
+  background: #8348ad;
+}
+

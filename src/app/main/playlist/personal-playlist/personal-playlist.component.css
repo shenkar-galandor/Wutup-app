@@ -13,6 +13,7 @@ img{
 }
 
 h1{
+  display: inline-block;
   color:#8348ad;
   font-family: "Poplar std";
   margin:0;
@@ -28,4 +29,12 @@ p{
 
 p span{
   color:#ffce00;
+}
+
+.closePlaylist{
+  color:#ffce00;
+  cursor: pointer;
+  display: inline-block;
+  margin-left:20px;
+  margin-bottom: 12px;
 }

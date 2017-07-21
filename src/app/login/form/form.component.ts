@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import {Router} from '@angular/router';
 import {
   trigger,
   state,
@@ -29,6 +30,9 @@ import {
   ])]
 })
 export class FormComponent implements OnInit {
+@Output() letSelect = new EventEmitter<string>();
+
+constructor(private router: Router) { }
 
   fullName:string = "";
   email:string = "";
@@ -60,6 +64,7 @@ export class FormComponent implements OnInit {
     }
     this.stage++;
     if (this.stage == 3){
+      this.router.navigate(['/main']);
       this.stage =0;
     }
   }
@@ -71,7 +76,6 @@ export class FormComponent implements OnInit {
       this.state = 'small';
     }
  }
-  constructor() { }
 
   ngOnInit() {
   }
@@ -79,5 +83,6 @@ export class FormComponent implements OnInit {
   sendLetter(key){
    console.log(key.key);
    this.selLetter = key.key;
+   this.letSelect.emit(this.selLetter);
   }
 }

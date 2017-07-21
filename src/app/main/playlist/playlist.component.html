@@ -1,9 +1,20 @@
 <div class="container">
-  <button (click)="openNav()">Open Playlist</button>
-  <button (click)="closeNav()">Close Playlist</button>
+  <!--<button (click)="openNav()">Open Playlist</button>-->
+  <i class="fa-2x fa fa-list-ul openPlayList"
+     aria-hidden="true"
+     (click)="openNav()"></i>
+  <i class="fa-2x fa fa-times closePlayList"
+     aria-hidden="true"
+     (click)="closeNav()"
+     [ngStyle]="{display:closePlaylist()}"></i>
+  <!--<button (click)="closeNav()">Close Playlist</button>-->
   <div class="row" #songList>
-    <div class="col-md-4 playZone" *ngFor="let song of playlist; let i = index">
-      <div class="pull-left"><img class="thumb" [src]="song.thumbnails.medium.url"></div>
+    <div class="col-md-4 playZone"
+         *ngFor="let song of playlist; let i = index">
+      <div class="pull-left">
+        <img class="thumb"
+             [src]="song.thumbnails.medium.url">
+      </div>
       <p>{{song.title}}</p>
       <p><span>By</span> {{song.channelTitle}}</p>
       <p><span>Created in 2006</span></p>
@@ -24,9 +35,24 @@
           >
           </youtube-player>
         </div>
-        <button type="button" class="btn btn-default" (click)="songs[i].playVideo()">Play</button>
-        <button type="button" class="btn btn-default" (click)="songs[i].pauseVideo()">Pause</button>
+        <!--<button type="button" class="btn btn-default playButton" (click)="songs[i].playVideo()">Play</button>-->
+        <!--<button type="button" class="btn btn-default pauseButton" (click)="songs[i].pauseVideo()">Pause</button>-->
       </div>
+      <i class="fa fa-play playButton"
+         aria-hidden="true"
+         (click)="songs[i].playVideo();
+         changeButton()"
+         [ngStyle]="{display: onPlay()}">
+
+      </i>
+      <i class="fa fa-pause pauseButton"
+         aria-hidden="true"
+         (click)="songs[i].pauseVideo();
+         changeButton()"
+         [ngStyle]="{display: onPause()}">
+
+      </i>
+      <div class="progress"></div>
     </div>
   </div>
 </div>

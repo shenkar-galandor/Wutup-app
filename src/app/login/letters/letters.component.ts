@@ -7,14 +7,14 @@ import {Component, OnInit, Input, OnChanges} from '@angular/core';
 })
 export class LettersComponent implements OnInit, OnChanges {
 
-  @Input() selectedLetter: string;
+  @Input() selectedLetter:string;
   constructor() { }
 
   ngOnInit() {
   }
 
   ngOnChanges(){
-    location.hash= '#letter'+ this.selectedLetter.toUpperCase();
+    location.hash= '#letter' + this.selectedLetter.toUpperCase();
     let element = document.getElementById('inp').focus();
   }
 
