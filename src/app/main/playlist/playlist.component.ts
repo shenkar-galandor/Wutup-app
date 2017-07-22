@@ -21,7 +21,9 @@ export class PlaylistComponent implements OnInit {
   songImagetoSend: string;
   toggleButton = true;
   togglePlaylist = true;
-  togglePlayzone = false;
+  paramsToFooter: object;
+  @Output() sendToFooter = new EventEmitter<object>();
+
   constructor(private playlistService: PlaylistService, private player: Player) { }
 
   ngOnInit() {
@@ -59,7 +61,20 @@ export class PlaylistComponent implements OnInit {
   this.elementToPass = 'hi';
   }
 
-  changeButton(){
+  changeButton(songTitle, channelTitle) {
+    if (this.toggleButton === true){
+    this.paramsToFooter = {'songTitle': songTitle,
+                          'author': channelTitle,
+                          'class': 'fa fa-pause',
+                          'status': '../../../assets/on.png'};
+    this.sendToFooter.emit(this.paramsToFooter);
+    }else {
+      this.paramsToFooter = {'songTitle': 'something',
+                            'author': 'something',
+                            'class':'fa fa-play',
+                            'status':'../../../assets/off.png'};
+      this.sendToFooter.emit(this.paramsToFooter);
+    }
     this.toggleButton = !this.toggleButton;
   }
 

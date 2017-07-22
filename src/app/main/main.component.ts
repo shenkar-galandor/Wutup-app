@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -6,6 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+
+  objectToSend = {'songTitle': 'something',
+                  'author': 'something',
+                  'class': 'fa fa-play',
+                  'status': '../../../assets/off.png'};
+
+  getParams(data) {
+    this.objectToSend = data;
+  }
 
   constructor() { }
 

@@ -35,13 +35,11 @@
           >
           </youtube-player>
         </div>
-        <!--<button type="button" class="btn btn-default playButton" (click)="songs[i].playVideo()">Play</button>-->
-        <!--<button type="button" class="btn btn-default pauseButton" (click)="songs[i].pauseVideo()">Pause</button>-->
       </div>
       <i class="fa fa-play playButton"
          aria-hidden="true"
          (click)="songs[i].playVideo();
-         changeButton()"
+         changeButton(song.title,song.channelTitle)"
          [ngStyle]="{display: onPlay()}">
 
       </i>

@@ -1,12 +1,13 @@
 <footer>
   <div class="container">
     <div class="clue"></div>
-    <i class="fa fa-angle-up fa-2x openFooter" aria-hidden="true"></i>
     <i class="fa fa-step-backward backButton" aria-hidden="true"></i>
-    <i class="fa fa-play playButton" aria-hidden="true"></i>
+    <i class="{{paramsToFooter.class}} playButton" aria-hidden="true"></i>
     <i class="fa fa-step-forward nextButton" aria-hidden="true"></i>
-    <img src="../../../assets/off.png" class="progressFooter">
-    <p>playing: <span>somthing</span> by: <span>something</span></p>
+    <img src={{paramsToFooter.status}} class="progressFooter">
+    <p class="details">playing: <span>{{paramsToFooter.songTitle}}</span>
+      by:<span>{{paramsToFooter.author}}</span>
+    </p>
     <i class="fa-2x fa fa-volume-up speaker" aria-hidden="true"></i>
     <input type="range" class="volumeRange" value="5" min="0" max="10">
   </div>

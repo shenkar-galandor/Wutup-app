@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-footer',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainFooterComponent implements OnInit {
 
+  @Input() paramsToFooter:object;
+
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

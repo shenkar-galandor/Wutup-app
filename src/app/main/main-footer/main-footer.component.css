@@ -33,11 +33,6 @@ i{
   top:8px;
 }
 
-.openFooter{
-  color:#ffce00;
-  top: 20px;
-}
-
 .backButton{
   padding:10px;
   border-radius: 100%;
@@ -67,14 +62,14 @@ i{
 
 .progressFooter{
   position: relative;
-  top: 25px;
+  top: 20px;
   left: 35px;
 }
 
 .speaker{
   color:#998f88;
   top:32px;
-  left: 390px;
+  left: 490px;
 }
 
 
@@ -82,9 +77,15 @@ i{
   display: inline-block;
   position: relative;
   top: 25px;
-  left:400px;
+  left:500px;
   width: 15px;
 
+}
+
+.details{
+  position: absolute;
+  top:10px;
+  left:400px;
 }
 
 input[type=range].volumeRange {

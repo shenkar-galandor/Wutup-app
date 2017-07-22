@@ -19,9 +19,9 @@
           >
           </youtube-player>
         </div>
-        <button type="button" class="btn btn-default" (click)="songs[i].playVideo()">Play</button>
-        <button type="button" class="btn btn-default" (click)="songs[i].pauseVideo()">Pause</button>
-        <button type="button" class="btn btn-default" (click)="removeSong(i,personal.songId)">Remove</button>
+        <i class="fa fa-play button" aria-hidden="true" (click)="songs[i].playVideo()"></i>
+        <i class="fa fa-pause button" aria-hidden="true" (click)="songs[i].pauseVideo()"></i>
+        <i class="fa fa-trash-o button" aria-hidden="true" (click)="removeSong(i,personal.songId)"></i>
       </div>
       </div>
     </div>

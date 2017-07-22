@@ -1,9 +1,9 @@
 <main>
   <app-nav></app-nav>
   <app-search></app-search>
-  <app-playlist></app-playlist>
+  <app-playlist (sendToFooter)="getParams($event)"></app-playlist>
 </main>
 <footer>
-<app-main-footer></app-main-footer>
+<app-main-footer [paramsToFooter]="objectToSend"></app-main-footer>
 </footer>
 
